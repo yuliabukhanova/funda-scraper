@@ -16,7 +16,7 @@ const houses = [];
 const { CHAT_ID, BOT_API } = process.env;
 
 const urls = [
-    'https://www.funda.nl/en/huur/amsterdam/0-2000/2+kamers/1-dag/+50km/',
+    'https://www.funda.nl/en/huur/amsterdam/0-2000/2+kamers/1-dag/+30km/',
 ];
 
 const runTask = async () => {
