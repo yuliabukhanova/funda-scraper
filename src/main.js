@@ -17,6 +17,9 @@ const { CHAT_ID, BOT_API } = process.env;
 
 const urls = [
     'https://www.funda.nl/en/huur/amsterdam/0-2000/2+kamers/1-dag/+15km/',
+    'https://www.funda.nl/en/huur/amsterdam/beschikbaar/0-2000/2+kamers/1-dag/+15km/',
+    'https://www.funda.nl/en/huur/haarlem/beschikbaar/0-2000/2+kamers/1-dag/+15km/',
+    'https://www.funda.nl/en/huur/amstelveen/beschikbaar/0-2000/2+kamers/1-dag/'
 ];
 
 const runTask = async () => {
