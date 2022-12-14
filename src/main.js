@@ -38,47 +38,9 @@ const runTask = async () => {
         console.log('sending messages to Telegram');
         const date = (new Date()).toISOString().split('T')[0];
         houses.forEach(({
-            path,
-            income,
-            residentsAge0to14,
-            residentsAge15to24,
-            residentsAge25to44,
-            residentsAge45to64,
-            residentsAge65AndOlder,
-            householdsWithChildren,
-            shareOfMorocco,
-            shareOfAntillesOrAruba,
-            shareOfSuriname,
-            shareOfTurkey,
-            neighbourhoodName,
-            municipalityName,
-            shareOfNonImmigrants,
-            residentsCount,
-            totalImmigrantsCount,
+            path
         }) => {
-            let text = `New house on ${date}: [click here](${path})`;
-
-            if (income) {
-                let extraStuff = `
-residentsIncome: **${income}**
-neighbourhoodName: **${neighbourhoodName}**
-municipalityName: **${municipalityName}**
-residentsAge0to14: **${residentsAge0to14}**
-residentsAge15to24: **${residentsAge15to24}**
-residentsAge25to44: **${residentsAge25to44}**
-residentsAge45to64: **${residentsAge45to64}**
-residentsAge65AndOlder: **${residentsAge65AndOlder}**
-householdsWithChildren: **${householdsWithChildren}**
-residentsCount: **${residentsCount}**
-totalImmigrantsCount: **${totalImmigrantsCount}**
-shareOfNonImmigrants: **${shareOfNonImmigrants}**
-shareOfMorocco: **${shareOfMorocco}**
-shareOfAntillesOrAruba: **${shareOfAntillesOrAruba}**
-shareOfSuriname: **${shareOfSuriname}**
-shareOfTurkey: **${shareOfTurkey}**
-`;
-                text = `${text}\n${extraStuff}`;
-            }
+            let text = `${date}\n[funda](${path})\n[map](${path}/#kaart)`
 
             nodeFetch(`https://api.telegram.org/bot${BOT_API}/sendMessage`, {
                 method: 'POST',
