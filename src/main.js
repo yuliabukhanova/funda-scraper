@@ -80,7 +80,7 @@ const runPuppeteer = async (url) => {
     const result = dom.window.document.querySelectorAll('[data-test-id="search-result-item"]');
     for (const element of result) {
         const urlPath = element?.querySelectorAll('a')?.[0]?.href;
-        const headerSubtitle = element?.querySelector('.search-result__header-subtitle');
+        const headerSubtitle = element?.querySelector('h2');
         const subtitleText = headerSubtitle?.innerHTML?.trim();
 
         let path = urlPath;
