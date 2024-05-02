@@ -16,10 +16,7 @@ const houses = [];
 const { CHAT_ID, BOT_API } = process.env;
 
 const urls = [
-    'https://www.funda.nl/en/huur/amsterdam/0-2000/2+kamers/1-dag/+15km/',
-    'https://www.funda.nl/en/huur/amsterdam/beschikbaar/0-2000/2+kamers/1-dag/+15km/',
-    'https://www.funda.nl/en/huur/haarlem/beschikbaar/0-2000/2+kamers/1-dag/+15km/',
-    'https://www.funda.nl/en/huur/amstelveen/beschikbaar/0-2000/2+kamers/1-dag/'
+    'https://www.funda.nl/en/zoeken/huur/?selected_area=%5B%22amsterdam,15km%22%5D&price=%22-2000%22&rooms=%222-%22&publication_date=%221%22'
 ];
 
 const runTask = async () => {
