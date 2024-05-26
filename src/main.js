@@ -16,7 +16,7 @@ const houses = [];
 const { CHAT_ID, BOT_API } = process.env;
 
 const urls = [
-    'https://www.funda.nl/en/zoeken/huur/?selected_area=%5B%22amsterdam,15km%22%5D&price=%22-2000%22&rooms=%222-%22&publication_date=%221%22'
+    'https://www.funda.nl/en/zoeken/huur?selected_area=%5B%22amsterdam,15km%22%5D&price=%22-2000%22&publication_date=%221%22'
 ];
 
 const runTask = async () => {
